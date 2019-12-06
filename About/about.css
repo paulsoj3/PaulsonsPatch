@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* Zack Kavaluskis & Jack Paulson
+   11/11/2019, Dr. Kinuthia, ISYS 288-001
+   Final Project
+   A css file to style the About page of website */
+
+/* set default page values */
+body {margin: 0;
+	background-color:#FDDDB9;
+	color: black}
+
+/* media query for responsive design */
+@media only screen and (max-width: 600px) {
+	.navigation {display: flex}
+	.navigation a {width: 100vw;
+		display: block}
+	#cornerBox h3 {font-size: 8px}
+	#mailto {margin-bottom: 10%}
+}
+
+/* media query for responsive design */
+@media only screen and (max-width: 1200px) {
+	.navigation {display: flex}
+	.navigation a {width: 100vw;
+		display: block}
+	#cornerBox h3 {font-size: 8px}
+	#mailto {margin-bottom: 10%}
+}
+
+/* Style the page heading and intro paragraph */
+body h1 {font-size: 40px;
+	padding-left: 2%}
+body p {padding-left: 2%;
+	font-size: 20px}
+/* Style the javascript greeting */
+h2 {font-size: 20px;
+	padding-left: 2%}
+	
+/* make box shadow and border around script*/
+#time {border: 1px solid white;
+	overflow: auto;
+	box-shadow: 3px 3px 8px 3px black;
+	margin-left: 2%;
+	font-size: 25px;
+	padding: 1% 1% 1% 5%;
+	width: 15%}
+	
+/* Format the list and set background color*/
+ul {display: inline-block;
+	background: rgba(107, 89, 70, 0.3);
+	padding:3%;
+	padding-top:1%;
+	width: 50%;
+	margin: 1%}
+/* Format the list items and set background*/
+li {background: #FDDDB9;
+	padding: 1%;
+	font-size: 20px;
+	list-style: inside}
+/* Style and format the list header */
+ul p {margin: auto;
+	padding-top: 0;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size:25px}
+	
+/* Style the email link and make box shadow for it*/
+#mailto {font-size: 25px;
+	padding-left: 2%;
+	padding-bottom: 5%;
+	text-shadow: 3px 3px 9px black;
+	color: white}
+	
+/* change default link color and color while hovering*/
+#mailto a:hover {color: orange;
+	text-shadow:2px 2px 8px white}
+#mailto a {color: white}
+
+/* Style the top navigation bar */
+.navigation {background-color: #F18204;
+	width: 100%;
+	padding: 0;
+	overflow: auto}
+/* Style the links to the other pages in the nav bar. Create border for the pages*/
+.navigation a {float: left;
+	margin: 0 auto;
+	width: 14.5%;
+	text-align: center;
+	color: #342009;
+	padding: 1%;
+	font-size: 18px;
+	text-decoration: none;
+	border: 1px solid black}
+
+/* Add styles to the links using pseudo elements hover and active */
+.navigation a:hover {background-color: #F18204;
+	color: #FEEEDC}
+.navigation a:active {background-color: #975102;
+	color: orange}
+
+/* Add styling to the footer */
+#cornerBox {position: fixed;
+	margin-bottom:0;
+	overflow: auto;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
+	color: #F18204;
+	background-color:black;
+	padding: 0;
+	padding-bottom:1%}
+/* format the text in the footer*/
+#cornerBox h3 {float: left;
+	width: 33%;
+	text-align: center;
+	padding-bottom: 1%;
+	font-size: 15px}
+	

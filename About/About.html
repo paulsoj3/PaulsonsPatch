@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- Zack Kavaluskis & Jack Paulson
+   11/11/2019, Dr. Kinuthia, ISYS 288-001
+   Create the About page for the website
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About</title>
+	<link rel="stylesheet" href="about.css"/>
+	<script src="About.js"></script>
+</head>
+
+<body>
+	<!-- Nav bar at top of screen -->
+	<div class = "navigation">
+		<a class = "active" href = "../index.html">Home</a>
+		<a href = "../Produce/produce.html">Produce</a>
+		<a href = "../Directions/Directions.html">Directions</a>
+		<a href = "About.html">About</a>
+		<a href = "../Comments/FAQ & Suggestions.html">FAQ</a>
+		<a href = "../Photos/photos.html">Photos</a>
+	</div>
+	<div id = "cornerBox">
+		<!--Footer that is displayed at the bottom of the screen  -->
+		<footer>
+			<h3>Hours: Open 9-7</h3>
+			<h3>Phone Number: 616-794-0922</h3>
+			<h3>Address: 11164 Belding Rd, Belding, MI 48809</h3> 
+		</footer>
+	</div>
+	
+	<h1>About</h1>
+	<h2 id = "time"></h2>
+	<!-- runs javascript function to print a greeting based on what time of day it is  --> 
+	<script>printGreeting();</script>
+	
+	<p>The Paulson's Pumkin Patch is a family run farm near Belding, MI. The farm has been in operation for over 30 years. </p>
+	
+	<!-- unordered list with info about farm--> 
+	<ul>
+		<p>Key Information About the Farm</p>
+		<li>Phone Number: 616-794-0922</li>
+		<li>Address: 11164 Belding Rd, Belding, MI 48809</li>
+		<li><em>Cash or Check only please!</em></li>
+		<li><strong>Sorry we do not accept credit cards</strong></li>
+		<li>Senior and WIC Project Fresh coupons are accepted Here!</li>
+		<li>Hours: 9-7 Everyday</li>
+		<li>Typically open from July - November</li>
+		<li>Picked Fresh Daily</li>
+		<li>Hay rides are given in October only on Sunday afternoons</li>
+	</ul>
+	<p> If you have any questions feel free to ask them by clicking below </p>
+	<!-- makes so users of site can click link on page to email us -->
+	<div id="mailto">
+		<a href = "mailto:paulsoj3@ferris.edu"> Click Me</a>
+	</div>
+</body>
+</html>

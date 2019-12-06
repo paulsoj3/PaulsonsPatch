@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* Zack Kavaluskis & Jack Paulson
+   11/11/2019, Dr. Kinuthia, ISYS 288-001
+   A css file to style the photos page of website
+*/
+
+/* remove space on top of nav bar */
+body {margin: 0;
+	background-color:#FDDDB9;
+	color: black}
+
+/* media query for responsive design */
+@media only screen and (max-width: 600px) {
+	.navigation {display: flex}
+	.navigation a {width: 100vw;
+		display: block}
+	#cornerBox h3 {font-size: 8px}
+	table {display: flex;
+		padding-left: 3%;
+		margin-bottom: 5%}
+	tr td {display: inline-block}
+	th {display: inline-block;
+		margin: auto}
+}
+
+/* media query for responsive design */
+@media only screen and (max-width: 1300px) {
+	.navigation {display: flex}
+	.navigation a {width: 100vw;
+		display: block}
+	#cornerBox h3 {font-size: 8px}
+	table {display: flex;
+		padding-left: 3%;
+		margin-bottom: 5%}
+	tr td {display: inline-block}
+	th {display: inline-block;
+		margin-left: 15%;
+		margin-right: 15%}
+}
+
+/* Style the top navigation bar */
+.navigation {background-color: #F18204;
+	width: 100%;
+	padding: 0;
+	overflow: auto}
+/* Style the links to the other pages in the nav bar*/
+.navigation a {float: left;
+	margin: 0 auto;
+	width: 14.5%;
+	text-align: center;
+	color: #342009;
+	padding: 1%;
+	font-size: 18px;
+	text-decoration: none;
+	border: 1px solid black}
+
+/* Add styles to the links using pseudo elements */
+.navigation a:hover {background-color: #F18204;
+	color: #FEEEDC}
+.navigation a:active {background-color: #975102;
+	color: orange}
+
+/* Add styling to the footer */
+#cornerBox {position: fixed;
+	margin-bottom:0;
+	overflow: auto;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
+	color: #F18204;
+	background-color:black;
+	padding: 0;
+	padding-bottom:1%}
+/* format the text in the footer*/
+#cornerBox h3 {float: left;
+	width: 33%;
+	text-align: center;
+	padding-bottom: 1%;
+	font-size: 15px}
+
+/* set the dimensions of the images*/
+img {width: 25vw;
+	height: 20vw;
+	padding-bottom: 4%}
+	
+/* set background of table and format it*/
+table {width: 80%;
+	background: rgba(107, 89, 70, 0.3);
+	text-align: center;
+	padding-bottom: 5%}
+
+/* change the font and format the table headers*/
+th {font-size: 40px;
+	padding-top: 2%;
+	padding-bottom: 2%}
+/* format the table data*/
+td {text-align :center}

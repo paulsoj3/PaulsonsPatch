@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- Zack Kavaluskis & Jack Paulson
+   11/11/2019, Dr. Kinuthia, ISYS 288-001
+   A html document for the FAQ page on website
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FAQ &amp; Suggestions</title>
+	<link rel="stylesheet" href="FAQ & Suggestions.css"/>
+	<script type="text/javascript" src="FAQ.js"></script>
+</head>
+
+<body>
+	<!-- Nav bar at top of screen -->
+	<div class = "navigation">
+		<a class = "active" href = "../index.html">Home</a>
+		<a href = "../Produce/produce.html">Produce</a>
+		<a href = "../Directions/Directions.html">Directions</a>
+		<a href = "../About/About.html">About</a>
+		<a href = "FAQ & Suggestions.html">FAQ</a>
+		<a href = "../Photos/photos.html">Photos</a>
+	</div>
+	<div id = "cornerBox">
+		<!--Footer that is displayed at the bottom of the screen  -->
+		<footer>
+			<h3>Hours: Open 9-7</h3>
+			<h3>Phone Number: 616-794-0922</h3>
+			<h3>Address: 11164 Belding Rd, Belding, MI 48809</h3> 
+		</footer>
+	</div>
+	<h1><strong>Frequently Asked Questions</strong></h1>
+		<!-- Table that displays all of the FAQ with both question and answer columns-->
+		<table>
+			<tr>
+				<th>Questions</th>
+				<th>Answers</th>
+			</tr>
+			<tr>
+				<td>When are you open?</td>
+				<td>We are open 9-7 everyday. However, if you come while we are not open there is a self serve box on the counter   	that you are welcome to use. 
+				</td>
+			</tr>
+			<tr>
+				<td>Where is Paulson's Pumpkin Patch located?</td>
+				<td>Our market is located at 11164 Belding Rd, Belding, MI 48809. Click the link below for more in depth directions. </br>
+				<!-- link back to the directions page-->
+				<a href="../Directions/Directions.html">Click here for indepth directions </a>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>Do you Accept Credit or Debit Cards?</td>
+				<td><strong>No! </strong>Sorry we do not accept credit or debit cards. We accept cash and check.</td>
+			</tr>
+			
+			<tr>
+				<td>Do yoy accept WIC project fresh coupons?</td>
+				<td>Yes! Project fresh coupons are accepted here along with senior coupons. </td>
+			</tr>
+			<tr>
+				<td>Do you accept the $2 senior coupons?</td>
+				<td>Yes! Senior coupons are accepted here along with WIC project fresh coupons.</td>
+			</tr>
+			<tr>
+				<td>Do you take Orders?</td>
+				<td>You typically can order pickling cucumbers and beets. Once you make your order you will be added to a list and we will call you when your order is ready. For other produce you may call ahead of time and we will try accommodate you by either reserving it for you or picking it for you so it is here when you arrive.</td>
+			</tr>
+			<tr>
+				<td>Do you offer hayrides?</td>
+				<td>Yes! Hayrides are offered Sunday afternoons in the October.:&#41;  </td>
+			</tr>
+			<tr>
+				<td>Do you allow people to come and pick themselves? </td>
+				<td>We typically will let people pick themselves if we have enough. If you want to pick something yourself call first and ask if it will be possible.</td>
+			</tr>
+			<tr>
+				<td>Do you close after Halloween?</td>
+				<td>After Hallowenn we move all of the produce into the garage where people can come and pay by putting the money into the self serve can that we have out ther. This is usually till the end of November or when we sell everything. </td>
+			</tr>
+			<tr>
+				<td>Does the Paulson's Pumkin Patch have social media?</td>
+				<td> We are on facebook. You can keep up with us by liking us on Facebook by clicking the link below:
+			</br>
+				<!-- link to the Paulson's Pumpkin Patch facebook page-->
+				<a href ="https://www.facebook.com/pg/Paulsons-Pumpkin-Patch-114928565251908/about/" target="_blank"> Click here to open our Facebook page</a> </td>
+			</tr>
+		</table>
+	
+	<!-- form that asks for input on website. returns javascript message to user-->
+	<form id="sug">
+	<div id ="display">	
+	We would appreciate hearing your input	
+	</div>
+	<input type="text" name="userSug">
+	<input type="button" onclick="return sugFunction()"
+		   value ="Submit">
+	
+	</form>
+
+	<!-- form that asks how visit to website was-->
+	<form>
+		<p>	Please let us know how you felt about your visit
+			<br />
+			<input type="radio" name = "radio" value= "Bad"/> Bad
+			<input type="radio" name = "radio" value= "OK"/> Ok
+			<input type="radio" name = "radio" value= "Good"/> Good
+			<input type="radio" name = "radio" value= "Very Satisfied"/> Very Satisfied
+			<input type="button" value ="Submit">
+		</p>
+	</form>
+	
+	<!-- form asking why you had an unpleasant visit-->
+	<form>
+		<p id = "text1">	If you had an unplesant visit please click the checkbox and tell us what we did wrong.
+			<br />
+			<input type="checkbox" id = "selection" onclick="reasonForBadVisit()" value= "selection"/> 
+			Didn't find what I was looking for </br>
+			<input type="checkbox" id = "rude" onclick="reasonForBadVisit()" value= "rude"/>
+			Rude Staff </br>
+			<input type="checkbox" id = "rotten" onclick="reasonForBadVisit()" value= "Rotten"/> 
+			Not Fresh </br>
+			<input type="checkbox" id = "busy" onclick="reasonForBadVisit()" value= "Busy"/> Too Busy </br>
+			<input type="checkbox" id = "wait" onclick="reasonForBadVisit()" value= "wait"/> 
+			Wait time to be checked out </br>
+		</p>
+	</form>
+</body>
+</html>

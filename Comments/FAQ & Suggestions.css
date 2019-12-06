@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* Zack Kavaluskis & Jack Paulson
+   11/11/2019, Dr. Kinuthia, ISYS 288-001
+   A css file to style the FAQ page of website
+*/
+
+/* remove space on top of nav bar */
+body {margin: 0;
+	background-color:#FDDDB9;
+	color: black;
+	padding-bottom: 5%}
+
+/* media query for responsive design */
+@media only screen and (max-width: 600px) {
+	.navigation {display: flex}
+	.navigation a {width: 100vw;
+		display: block}
+	#cornerBox h3 {font-size: 8px}
+	#text1 {padding-bottom: 5%}
+}
+
+/* media query for responsive design */
+@media only screen and (max-width: 1200px) {
+	.navigation {display: flex}
+	.navigation a {width: 100vw;
+		display: block}
+	#cornerBox h3 {font-size: 8px}
+	#text1 {padding-bottom: 5%}
+}
+
+/* Style the heading */
+h1 {font-size: 40px;
+	padding-left: 2%}
+	
+/* Style the table and individual th and td*/
+table, th, td{border: 1px solid black;
+	border-collapse: seperate}
+table {width: 80%;
+	margin-right: auto;
+	margin-left: 1%;
+	margin: 1%
+	text-align: left}
+td {font-size: 20px;
+	word-break: keep-all}
+th {font-size:20px;
+	padding: 2%}
+
+/* style the link to directions page in table*/
+tr a {text-shadow: 3px 3px 9px black}
+tr a:hover {color: orange;
+	text-shadow:2px 2px 8px white}
+tr a {color: white}
+
+/* format the form in sug class*/
+#sug {font-size: 20px;
+	margin: auto;
+	margin-left: 1.5%;
+	margin-top: 1%}
+	
+/* format the p and form elements*/
+p {font-size: 20px;
+	padding-left: 2%;
+	font-weight: normal}
+form {margin-bottom: 0}
+
+/* Style the top navigation bar */
+.navigation {background-color: #F18204;
+	width: 100%;
+	padding: 0;
+	overflow: auto}
+/* Style the links to the other pages in the nav bar*/
+.navigation a {float: left;
+	margin: 0 auto;
+	width: 14.5%;
+	text-align: center;
+	color: #342009;
+	padding: 1%;
+	font-size: 18px;
+	text-decoration: none;
+	border: 1px solid black}
+
+/* Add styles to the links using pseudo elements */
+.navigation a:hover {background-color: #F18204;
+	color: #FEEEDC}
+.navigation a:active {background-color: #975102;
+	color: orange}
+
+/* Add styling to the footer */
+#cornerBox {position: fixed;
+	margin-bottom:0;
+	overflow: auto;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
+	color: #F18204;
+	background-color:black;
+	padding: 0;
+	padding-bottom:1%}
+/* format the text in the footer*/
+#cornerBox h3 {float: left;
+	width: 33%;
+	text-align: center;
+	padding-bottom: 1%;
+	font-size: 15px}
+	
